@@ -6,8 +6,8 @@ import java.nio.charset.Charset;
 /**
  * KSC5601  = KSC5601-1987
  * EUCKR    = KSC5601-1987 + KSC5636(한글이외 문자표시규약)
- * CP949    = KSC5601-1997 + 확장한글
- * MS949    = KSC5601-1992 + 확장한글
+ * CP949    = KSC5601-1987 + 확장한글
+ * MS949    = KSC5601-1992
  * UTF8     = 전세계 데이터 송수신 권장 문자셋, 최대 6 byte, 한글 3 byte, 영문 1 byte
  * AL32UTF8 = Oracle 9i 이상 기본 및 권장 문자셋, 최대 4 byte, 한글 3 byte, 영문 1 byte
  */
