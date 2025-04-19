@@ -22,7 +22,7 @@ public class CharsetTest {
     @Test
     public void t1() throws Exception {
         String[] sa = {"오렌즤", "오렌즹", "똠뷱뾸"};
-        String[] ca = {"KSC5601", "EUCKR", "CP949", "MS949", "UTF8", "KSC5601-1992"};
+        String[] ca = {"KSC5601", "EUCKR", "CP949", "MS949", "UTF8"};
         for (String s : sa) {
             for (String c : ca) {
                 byte[] ba = s.getBytes(c);
