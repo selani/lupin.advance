@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="oracle.database.nls.orai18n" type="repository">
+    <properties maven-id="com.oracle.database.nls:orai18n:23.7.0.25.01" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/orai18n-23.7.0.25.01.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/orai18n-23.7.0.25.01-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/orai18n-23.7.0.25.01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

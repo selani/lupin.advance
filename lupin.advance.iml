@@ -18,6 +18,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="orai18n" level="project" />
+    <orderEntry type="library" name="oracle.database.nls.orai18n" level="project" />
   </component>
 </module>
