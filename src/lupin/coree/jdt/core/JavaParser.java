@@ -1,6 +1,7 @@
 package lupin.coree.jdt.core;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 import java.util.regex.Matcher;
 
 public class JavaParser {
@@ -17,16 +18,20 @@ public class JavaParser {
         public L s1, s2, l;
 
         void parse() {
-            T a = new T();
-            a.y = Y.IMPORTS;
+            L m = new L();
+
+            for (T t : l) {
+                if (t.y == Y.MIDIFIER) m.add(t);
+
+            }
         }
     }
 
     public static class L extends LinkedList<T> {
-        public T p;
+
     }
 
     public static enum Y {
-        FILE, IMPORTS, MIDIFIER, CLASS, METHOD, PARENTHESES, BRACE, BRACKETS, SEMICOLON;
+        FILE, IMPORTS, MIDIFIER, CLASS, METHOD, PARENTHESES, BRACE, BRACKETS, SEMICOLON, EMPTY;
     }
 }
