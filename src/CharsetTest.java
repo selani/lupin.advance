@@ -24,7 +24,8 @@ public class CharsetTest {
     @Test
     public void t1() throws Exception {
         String[] sa = {"오렌즤", "오렌즥", "똠뷱뾸", "なんて", "新的开"};
-        String[] ca = {"KSC5601", "EUCKR", "CP949", "MS949", "UTF8", "X-ORACLE-AL32UTF8", "X-ORACLE-KO16MSWIN949"};
+        // String[] ca = {"KSC5601", "EUCKR", "CP949", "MS949", "UTF8"};
+        String[] ca = {"X-ORACLE-KO16KSC5601", "X-ORACLE-KO16MSWIN949", "UTF-8", "X-ORACLE-AL32UTF8"};
         for (String s : sa) {
             for (String c : ca) {
                 byte[] ba = s.getBytes(c);
@@ -47,7 +48,7 @@ public class CharsetTest {
         Map<String, Charset> map = Charset.availableCharsets();
         for (String k : map.keySet()) {
             Charset c = map.get(k);
-            if (k.matches(".*(UTF|949).*"))
+            if (k.matches(".*(16).*"))
                 System.out.printf("%s, %s, %s %n", k, c.name(), c.displayName());
         }
     }
