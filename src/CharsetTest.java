@@ -25,7 +25,8 @@ public class CharsetTest {
     public void t1() throws Exception {
         String[] sa = {"오렌즤", "오렌즥", "똠뷱뾸", "なんて", "新的开"};
         // String[] ca = {"KSC5601", "EUCKR", "CP949", "MS949", "UTF8"};
-        String[] ca = {"X-ORACLE-KO16KSC5601", "X-ORACLE-KO16MSWIN949", "UTF-8", "X-ORACLE-AL32UTF8"};
+        // String[] ca = {"X-ORACLE-KO16KSC5601", "X-ORACLE-KO16MSWIN949", "UTF-8", "X-ORACLE-AL32UTF8"};
+        String[] ca = {"KSC5601", "KSC5601-1987", "KSC5601-1992"};
         for (String s : sa) {
             for (String c : ca) {
                 byte[] ba = s.getBytes(c);
